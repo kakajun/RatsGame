@@ -40,3 +40,35 @@
 .read-the-docs {
   color: #888;
 }
+
+.game {
+  cursor: url('./assets/hammer.jpg'), pointer;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.mole {
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.mole img {
+  width: 100%;
+  height: auto;
+  border-radius: 100%;
+}
+
+.mole.active {
+  background-color: green;
+}
